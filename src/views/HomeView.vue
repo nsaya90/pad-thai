@@ -75,7 +75,9 @@
 
     <!-- 4eme partie -->
 
-    <div class="box-four-img"></div>
+    <div class="box-four-img">
+        <p>Venez deguster nos délicieux plat !</p>
+    </div>
 
     <!-- 5eme partie -->
     <div class="box-five-img">
@@ -87,7 +89,7 @@
         </div>
         <div class="box-carte">
             <div class="specialite">
-                <h6>SPÉCIALITÉS</h6>
+                <h4>SPÉCIALITÉS</h4>
                 <p><span class="red-letter">P</span>ad Thaï ....8€</p>
                 <p class="description">
                     Nouilles de riz , poulet, oignon, œuf, cacahuète, bœuf,
@@ -109,7 +111,7 @@
                 </p>
             </div>
             <div class="accompagnements">
-                <h6>ACCOMPAGNEMENTS</h6>
+                <h4>ACCOMPAGNEMENTS</h4>
                 <p><span class="red-letter">N</span>ems x6 ....8€</p>
                 <p><span class="red-letter">S</span>amosas x6 ....8€</p>
                 <p><span class="red-letter">G</span>yosa x6 ....8€</p>
@@ -161,15 +163,22 @@ export default {
 .box-img-home {
     background-image: url(../assets/Home.png);
     width: 100%;
-    height: 255px;
+    height: 844px;
     background-position: center;
     background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .d-flex {
     color: white;
     padding-top: 77px;
     padding-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .first-title {
@@ -185,17 +194,16 @@ export default {
 
 /*  2eme partie */
 
-.box-second-container {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
 .box-img-second {
     background-image: url(../assets/2.png);
     width: 100%;
-    height: auto;
+    height: 844px;
     background-position: center;
     background-size: cover;
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
 }
 .box-img-second h1 {
     font-size: 30px;
@@ -212,17 +220,26 @@ export default {
     padding: 15px;
 }
 .box-second-info-1 {
-    width: 50%;
+    width: 100%;
+    height: 315px;
     text-align: left;
     font-size: 10px;
     font-weight: 500;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .box-info-img {
     background-image: url(../assets/carte_recto.jpeg);
     background-position: center;
     background-size: cover;
-    width: 50%;
-    height: auto;
+    width: 100%;
+    height: 529px;
+}
+.box-info-text {
+    width: 70%;
 }
 
 /* 3eme partie */
@@ -255,12 +272,24 @@ export default {
 
 /* 4eme partie */
 
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
 .box-four-img {
     background-image: url(../assets/4.png);
     background-position: center;
     background-size: cover;
-    height: 250px;
+    height: 594px;
     width: 100%;
+}
+
+.box-four-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: "Lobster", cursive;
+    font-size: 60px;
 }
 
 /* 5eme partie */
@@ -269,8 +298,9 @@ export default {
     background-image: url(../assets/5.png);
     background-position: center;
     background-size: cover;
-    height: auto;
+    height: 844px;
     width: 100%;
+    padding: 15px;
 }
 
 .box-five-info {
@@ -281,31 +311,39 @@ export default {
 }
 
 .specialite {
-    width: 40%;
+    width: 100%;
     font-size: 14px;
     font-weight: 600;
+}
+.specialite h4 {
+    text-align: center;
 }
 .accompagnements {
-    width: 40%;
+    width: 100%;
     font-size: 14px;
     font-weight: 600;
 }
-
+.accompagnements h4 {
+    text-align: center;
+}
 .box-carte {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
 }
-
 /* 6eme partie */
 .box-six-img {
     background-image: url(../assets/6.png);
     background-position: center;
     background-size: cover;
-    height: 250px;
+    height: 844px;
     width: 100%;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -317,8 +355,8 @@ export default {
 }
 .box-camion-img {
     background-image: url(../assets/camion.jpg);
-    width: 40%;
-    height: 172px;
+    width: 84%;
+    height: 269px;
     background-position: center;
     background-size: cover;
 }
