@@ -135,7 +135,7 @@
             <p>
                 <img
                     src="https://img.icons8.com/fluency/20/null/facebook.png"
-                />tuktuk.salondeprovence
+                /><a href="https://www.facebook.com/tuktuk.salon">Tuk Tuk</a>
             </p>
             <p>
                 <span class="red-letter">T</span>uk Tuk se déplace pour vos
